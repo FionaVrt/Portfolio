@@ -6,6 +6,7 @@
 
 body{
     background-color: #1f242d;
+    color: #0ef;
 }
 
 .header{
@@ -47,13 +48,39 @@ body{
 .home{
     position: relative;
     width: 100%;
-    justify-content: space-between;
     height: 100vh;
-    background: url();
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 10% 0;
 }
 
+.home-content{
+    max-width: 600px;
+}
 
+.home-content h3{
+    font-size: 32px;
+    font-weight: 700;
+}
+.home-content h1{
+    font-size: 56px;
+    font-weight: 700;
+    margin: -3px 0;
+}
 
+.home-content h3:nth-last-of-type(2){
+    margin-bottom: 30px;
+}
+
+.home-content p{
+    font-size: 16px;
+}
+
+.home-img img{
+    max-width: 450px;
+    
+}
 
 
 
@@ -67,19 +94,19 @@ body{
     height: 50px;
     margin: 5px;
     border-radius: 50%;
-    background-color: #fff;
+    background-color: transparent;
     color: #fff;
     font-size: 20px;
     text-decoration: none; 
     transition: background-color 0.3s ease;
-    position: relative; /* Ajout d'une position relative pour les dégradés */
-    overflow: hidden; /* Pour masquer les débordements des dégradés */
+    position: relative; 
+    overflow: hidden; 
 }
 
 /* Style des icônes */
 .social-btns .btn i {
     line-height: 1;
-    pointer-events: none; /* Désactiver les événements de pointage sur les icônes */
+    pointer-events: none; 
 }
 
 /* Couleurs des icônes */
@@ -100,4 +127,17 @@ body{
     background-color: #555;
     /* Dégradé linéaire de haut en bas */
     background-image: linear-gradient(to bottom, #5A1929, #fff);
+}
+
+.btn{
+    display: inline-block;
+    padding: 12px 28px;
+    background-color: #5A1929;
+    color: #fff;
+    border-radius: 40px;
+    box-shadow: 0 0 10px #fff;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
 }
